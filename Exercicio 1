@@ -1,0 +1,22 @@
+/*Faça um programa que leia 5 valores inteiros, armazeno-os em um vetor, calcule e apresente a soma
+destes valores.*/
+
+
+
+#include<stdio.h>
+
+int main(){
+	
+	int v[5];
+	
+	int s=0;
+	
+	for(int i= 0; i < 10; i++){
+		
+		scanf("%d", &v[i]);
+		
+		s += v[i];
+	}
+	
+	printf("Soma: %d\n", s);
+}
