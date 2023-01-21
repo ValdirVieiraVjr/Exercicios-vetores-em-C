@@ -1,0 +1,21 @@
+/*Leia um vetor de 10 posic¸oes. Contar e escrever quantos valores pares ele possui.*/
+
+
+
+#include<stdio.h>
+
+int main(){
+	
+	int v[10], i, par = 0;
+	
+	printf("Insira 10 numeros:\n");
+	
+	for(i=0; i <10; i++){
+		
+		scanf("%d", &v[i]);
+		
+		if(v[i]%2 == 0) par++;
+	}
+	
+	printf("%d valores pares.\n", par);
+}
