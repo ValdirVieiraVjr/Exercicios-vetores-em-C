@@ -1,0 +1,28 @@
+/*Fac¸a um programa que receba do usuario um vetor com 10 posic¸ ´ oes. Em seguida dever ˜ a´
+ser impresso o maior e o menor elemento do vetor.*/
+
+
+#include<stdio.h>
+
+int main(){
+
+int v[10], i, menor, maior;
+
+printf("Insira 10 numeros:\n");
+
+for(i=0; i<10; i++){
+	
+	scanf("%d", &v[i]);
+	
+	if(i == 0){
+	 menor = v[i];
+	 maior = v[i];
+	 }
+	if(v[i] > maior) maior = v[i];
+	if(v[i] < menor) menor = v[i];
+	
+}
+
+printf("Maior elemento: %d\nMenor elemento: %d\n", maior, menor);
+
+}
