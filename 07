@@ -1,0 +1,27 @@
+/*Faça um programa que leia um vetor de 8 posic¸oes e, em seguida, leia tamb ˜ em dois va- ´
+lores X e Y quaisquer correspondentes a duas posic¸oes no vetor. Ao final seu programa ˜
+devera escrever a soma dos valores encontrados nas respectivas posic¸ ´ oes ˜ X e Y. */
+
+#include<stdio.h>
+
+int main(){
+	
+	int v[8], i, x, soma =0;
+	
+	printf("Digite 8 numeros:\n");
+	
+	for(i = 0; i<8; i++){
+		
+		scanf("%d", &v[i]);
+	}
+	
+	printf("Insira 2 valores do vetor:\n");
+	
+	for(i = 0; i<2; i++){
+		
+		scanf("%d", &x );
+		
+		soma += v[x];
+	}
+	printf("Soma: %d", soma);
+}
