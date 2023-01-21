@@ -1,0 +1,31 @@
+/*Dados dois vetores x e y em um espaço de 10 dimensões, determine o produto escalar desses vetores
+usando um laço. */
+
+
+#include<stdio.h>
+
+int main(){
+	
+	int v1[10], v2[10], i, produto_escalar = 0;
+	
+	printf("Insira os 10 primeiros numeros\n");
+	
+	for(i = 0;  i<10; i++){
+		
+		scanf("%d", &v1[i]);
+		
+	}
+	
+	printf("Insira mais 10 numeros:\n");
+	
+	for(i=0; i<10; i++){
+		
+		scanf("%d", &v2[i]);
+		
+		produto_escalar += v1[i]*v2[i];
+		
+	}
+	
+	printf("O produto escalar é %d\n", produto_escalar);
+	
+}
