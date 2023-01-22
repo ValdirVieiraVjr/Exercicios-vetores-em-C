@@ -1,0 +1,25 @@
+/*Fazer um programa para ler 5 valores e, em seguida, mostrar a posic ̧ao onde se encon-  ̃
+tram o maior e o menor valor.*/
+
+
+
+#include<stdio.h>
+
+int main(){
+
+  int v[5], i, menor, maior;
+
+  for(i=0; i<5; i++){
+
+    scanf("%d", &v[i]);
+
+    if(i ==0){
+      menor = v[i];
+      maior = v[i];
+    }
+    else if(v[i] > maior) maior = v[i];
+    else if(v[i] < menor) menor = v[i];
+  }
+
+  printf("O menor valor é %d e o maior valor é %d", menor, maior);
+}
