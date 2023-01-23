@@ -1,0 +1,40 @@
+/*Escreva um programa que leia 12 números do
+tipo inteiro ao usuário. Separe os números pares
+e ímpares lidos em dois outros vetores chamados
+vetpar e vetimpar. Em seguida, faça o programa
+apresentar os resultados na tela. */
+
+
+
+#include<stdio.h>
+
+int main(){
+	
+	int v[12], par[12], impar[12], i, c_impar= 0, c_par= 0;
+	
+	for(i=0; i<12; i++){
+		
+		scanf("%d", &v[i]);
+		
+		if(v[i] %2 == 0){
+			par[c_par] = v[i];
+			c_par++;
+		}
+		else{
+			impar[c_impar] = v[i];
+			c_impar++;
+		}
+	}
+	
+	printf("Numeros pares: ");
+	
+	for(i=0; i<c_par; i++){
+		
+		printf("%d ", par[i]);
+	}
+	printf("\nNumeros impares: ");
+	for(i=0; i<c_impar; i++){
+		
+		printf("%d ", impar[i]);
+	}
+}
