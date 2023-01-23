@@ -1,0 +1,39 @@
+/*Fac ̧a um programa que leia um vetor de 5 posic ̧oes para n  ̃ umeros reais e, depois, um  ́
+codigo inteiro. Se o c  ́ odigo for zero, finalize o programa; se for 1, mostre o vetor na ordem  ́
+direta; se for 2, mostre o vetor na ordem inversa. Caso, o codigo for diferente de 1 e 2  ́
+escreva uma mensagem informando que o codigo  ́ e inv  ́ alido.  ́*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+
+int v[5], i, codigo;
+
+  printf("Insira 5 valores:\n");
+
+  for(i=0; i<5; i++){
+
+    scanf("%d", &v[i]);
+  }
+
+  printf("Insira um código:\n");
+  scanf("%d", &codigo);
+
+  if(codigo ==0) exit(0);
+  else if(codigo == 1){
+    for(i=0; i<5; i++){
+
+      printf("%d ", v[i]);
+    }
+  }
+  else if(codigo == 2){
+    for(i =4; i>=0; i--){
+      
+      printf("%d ", v[i]);
+    }
+  }
+  else printf("Codigo invalido.\n");
+}
