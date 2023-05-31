@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include<string.h>
+
+
+int main() {
+
+    char c[16];
+    char d[16];
+    char z[16];
+    char s[16];
+
+    for(;;) {
+        scanf("%s", &c);
+        if(strlen(c) >= 4 && strlen(c) <= 15) break;
+    }
+    for(;;) {
+        scanf("%s", &d);
+        if(strlen(d) >= 4 && strlen(d) <= 15) break;
+    }
+    for(;;) {
+        scanf("%s", &z);
+        if(strlen(z) >= 4 && strlen(z) <= 15) break;
+    }
+    for(;;) {
+        scanf("%s", &s);
+        if(strlen(s) >= 2 && strlen(s) <= 15) break;
+    }
+
+    int i;
+
+    for(i=0; i <= strlen(c);){
+
+        if(c[i] == d[i]){
+
+
+        }
+    }
+
+    printf("%s", c);
+    printf("tamanho: %d", strlen(c));
+}
